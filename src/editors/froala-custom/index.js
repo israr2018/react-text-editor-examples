@@ -42,7 +42,7 @@ class EditorComponent extends Component {
   render () {
     return (
       <div className='editor'>
-        <h1>Custom Froala</h1>
+        <h2>Custom Froala</h2>
         <FroalaEditor
           config={this.config}
           model={this.state.model}

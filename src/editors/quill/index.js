@@ -41,7 +41,7 @@ class EditorComponent extends Component {
   render() {
     return (
       <div className='editor'>
-        <h1>Quill</h1>
+        <h2>Quill</h2>
         <ReactQuill
           theme="snow"
           modules={this.modules}

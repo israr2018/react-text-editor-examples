@@ -85,7 +85,7 @@ class CustomDraftEditor extends Component {
   render() {
     return (
       <div className="editor">
-        <h1>Custom Draft</h1>
+        <h2>Custom Draft</h2>
         <div className="draft-custom-editor" onClick={this.focus}>
           <Editor
             editorState={this.state.editorState}

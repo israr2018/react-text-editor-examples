@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p>
-            Rich text editor examples
+            Rich text editor examples for React
           </p>
         </header>
         <FroalaEditor />

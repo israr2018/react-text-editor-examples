@@ -32,7 +32,7 @@ class EditorComponent extends Component {
   render () {
     return (
       <div className='editor'>
-        <h1>Froala</h1>
+        <h2>Froala</h2>
         <FroalaEditor
           model={this.state.model}
           onModelChange={this.handleModelChange}

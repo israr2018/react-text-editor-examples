@@ -31,7 +31,7 @@ class EditorComponent extends Component {
   render() {
     return (
       <div className='editor' onClick={this.focusEditor}>
-        <h1>Draft</h1>
+        <h2>Draft</h2>
         <div className='quill-editor'>
           <Editor
             ref={this.setEditor}
