@@ -23,6 +23,8 @@ const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin-alt');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
@@ -501,6 +503,11 @@ module.exports = function(webpackEnv) {
             : undefined
         )
       ),
+      new BundleAnalyzerPlugin({
+        analyzerMode: 'server',
+        generateStatsFile: true,
+        statsOptions: { source: false }
+      }),
       // Inlines the webpack runtime script. This script is too small to warrant
       // a network request.
       isEnvProduction &&
